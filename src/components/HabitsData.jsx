@@ -4,7 +4,7 @@ import { v4 as uuid } from 'uuid';
 export const habits = [
     {
         id: uuid(),
-        thumbnail: "habit1.jpg",
+
         title: "Exercise",
         start: "2023-06-01",
         end: "2023-06-01",
@@ -16,7 +16,7 @@ export const habits = [
     },
     {
         id: uuid(),
-        thumbnail: "habit2.jpg",
+
         title: "Meditation",
         start: "2023-06-02",
         repeat: "Daily",
@@ -26,7 +26,7 @@ export const habits = [
     },
     {
         id: uuid(),
-        thumbnail: "habit3.jpg",
+
         title: "Reading",
         start: "2023-06-03",
         repeat: "Weekly",

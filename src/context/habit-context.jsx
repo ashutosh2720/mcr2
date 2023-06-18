@@ -4,10 +4,13 @@ const habitContext = createContext();
 
 const HabitProvider = ({ children }) => {
     const [allHabits, setAllHabits] = useState(habits)
+    const AddHabit = (newHabit) => {
+        setAllHabits((prev) => [...prev, newHabit])
+    }
 
 
     return (
-        <habitContext.Provider value={{ allHabits, setAllHabits }}>
+        <habitContext.Provider value={{ allHabits, AddHabit, setAllHabits }}>
             {children}
         </habitContext.Provider>
     );
